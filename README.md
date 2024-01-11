@@ -6,4 +6,4 @@
 4 commit - optimizing photos and creating an svg sprite and adding it to the project(оптимізація фоток та створення svg спрайту та додавання цього до проекту)<br>
 5 commit - added svg sprite, optimized photos, added sass(додали свг спрайт оптимізували фотки додали сасс)<br>
 6 commit - connecting local fonts(підключення локальних шрифтів) сайт https://gwfh.mranftl.com/fonts<br>
-
+7 commit - adding a header section
