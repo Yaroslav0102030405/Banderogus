@@ -10,3 +10,4 @@
 8 commit - add section hero<br>
 9 commit - add section advantages<br>
 10 commit - add section advantages<br>
+11 commit - add section footer<br>
