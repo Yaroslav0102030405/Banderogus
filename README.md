@@ -11,3 +11,4 @@
 9 commit - add section advantages<br>
 10 commit - add section advantages<br>
 11 commit - add section footer<br>
+12 commit - add modal<br>
