@@ -5,6 +5,7 @@
 
 .hero-wapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hero-content {
@@ -59,3 +60,8 @@
   top: 0;
   right: 160px;
 }
+
+// .hero-image svg {
+//   width: 670px;
+//   height: 720px;
+// }
