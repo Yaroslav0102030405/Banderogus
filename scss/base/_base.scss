@@ -1,13 +1,4 @@
 /* Base settings */
-// html {
-//   box-sizing: border-box;
-// }
-
-// *,
-// *::before,
-// *::after {
-//   box-sizing: inherit;
-// }
 
 /* Базовые настройки ------------ */
 /* .light-theme {
@@ -25,11 +16,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family:
-    Montserrat,
-    Segoe UI;
+  font-family: Montserrat, Segoe UI;
   /* background-color: var(--white); */
-  color: #fff;
+  // color: #fff;
+  color: #181D1F;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -90,7 +80,7 @@ h2,
 h3,
 h4,
 h5,
-h6 p {
+h6, p {
   margin-top: 0;
   padding: 0;
   /* padding: 0;
