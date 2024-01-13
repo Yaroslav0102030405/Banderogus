@@ -12,7 +12,7 @@
 10 commit - add section advantages<br>
 11 commit - add section footer<br>
 12 commit - add modal<br>
-13 commit - add mobile tablet and desctop version
-14 commit - add scrollbar and cursor
-15 commit - sending the form to telegram and adding animation
-16 commit - form validation
+13 commit - add mobile tablet and desctop version<br>
+14 commit - add scrollbar and cursor<br>
+15 commit - sending the form to telegram and adding animation<br>
+16 commit - form validation<br>
