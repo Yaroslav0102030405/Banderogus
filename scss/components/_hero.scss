@@ -15,6 +15,10 @@
   background: #fff;
   padding: 60px;
   border-radius: 40px;
+
+  @media screen and (max-width: $tablet) {
+    padding: 10px;
+  }
 }
 
 .hero-content__subtitle {
@@ -25,6 +29,10 @@
 
   font-style: italic;
   margin-bottom: 60px;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .hero-content__title {
@@ -35,6 +43,10 @@
   // font-style: italic;
   font-style: oblique;
   margin-bottom: 35px;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 40px;
+  }
 }
 
 .hero-content__text {
@@ -43,7 +55,11 @@
 
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 21px;
+  }
 }
 
 .hero-content__btn {
@@ -53,15 +69,31 @@
 
   padding: 14px 25px;
   border: none;
+
+  @media screen and (max-width: $tablet) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.hero-content__btn:hover,
+.hero-content__btn:focus {
+  background: #a5deff;
 }
 
 .hero-image {
-  position: absolute;
-  top: 0;
-  right: 160px;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 0;
+    right: 10.5%;
+  }
 }
 
-// .hero-image svg {
-//   width: 670px;
-//   height: 720px;
-// }
+.hero-image svg {
+  width: 670px;
+  height: 720px;
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+}

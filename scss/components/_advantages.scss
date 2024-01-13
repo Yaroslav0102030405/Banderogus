@@ -10,6 +10,16 @@
   justify-content: space-around;
 }
 
+.advantages-images svg {
+  width: 374px;
+  height: 374px;
+
+  @media screen and (max-width: $tablet) {
+  width: 274px;
+  height: 274px;
+  }
+}
+
 .advantages-images__title {
 font-size: 24px;
 font-weight: 500;
@@ -33,7 +43,11 @@ line-height: 1.5;
 
   font-size: 48px;
   font-weight: 600;
-  line-height: 2; /* 50% */
+  line-height: 2;
+
+    @media screen and (max-width: $tablet) {
+   font-size: 30px;
+  }
 }
 
 .advantages__text {
