@@ -23,35 +23,29 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-//   cursor: url('../image/cursor-blue.png'), auto;
+  cursor: url('/image/cursor64.png'), auto;
 }
 
-// add scrollbar
-// .window {
-//   overflow: auto;
-//   // border: 1px solid #fff;
-//   border-radius: 5px 0 0 5px;
-// }
+add scrollbar
+.window {
+  overflow: auto;
+  // border: 1px solid #fff;
+  border-radius: 5px 0 0 5px;
+}
 
-// ::-webkit-scrollbar {
-//   // border: 1px solid #fff;
-//   background: linear-gradient(
-//     0deg,
-//     rgba(34, 193, 195, 1) 0%,
-//     rgba(89, 84, 12, 0.6615896358543417) 0%,
-//     rgba(13, 156, 248, 1) 1%,
-//     rgba(209, 134, 84, 0.017331932773109293) 100%
-//   );
-// }
+::-webkit-scrollbar {
+background: rgb(17,144,210);
+background: linear-gradient(90deg, rgba(17,144,210,1) 35%, rgba(255,115,0,1) 100%);
+}
 
-// ::-webkit-scrollbar-thumb {
-//   border-radius: 5px;
-//   background: #0e68ce;
-//   // border: 1px solid #fff;
-// }
-// body.modal-open {
-//   overflow: hidden;
-// }
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #ff6b0a;
+  // border: 1px solid #fff;
+}
+body.modal-open {
+  overflow: hidden;
+}
 
 /* Создание контейнера ----------- */
 .container {
