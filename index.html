@@ -757,7 +757,7 @@
 
     <!-- form and backdrop -->
     <div class="backdrop is-hidden">
-      <form class="form">
+      <form id="form"  class="form">
          <button class="form__button modal-btn-close" type="button">
           <svg class="form__clouse" width="24" height="24">
             <use href="./image/icons.svg#icon-clouse"></use>
@@ -769,12 +769,22 @@
         <h2 class="form__title">Поділися, будь ласка, поштою</h2>
         <p class="form__text">та запиши гуся до бандерозагону</p>
         <label class="form__label">Ім'я</label><br />
-        <input class="form__input margion__button" type="name" required /><br />
+        <input class="form__input margion__button" type="name" name="name" required autocomplete="name" /><br />
         <label class="form__label">Email</label><br />
-        <input class="form__input" type="email" required /><br />
+        <input class="form__input" type="email" name="email" required autocomplete="email" /><br />
+        <div id="success" class="form__message" style="display: none"></div>
+        
         <button class="form__btn" type="submit">Запустити гуся</button>
+        <img class="gus-anim" src="./image/gus-anim.gif" alt="gus">
+        
       </form>
     </div>
     <script src="./js/modal.js"></script>
+
+    <!-- Відправка форми на телеграм -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/telegram.js"></script>
+
+
   </body>
 </html>

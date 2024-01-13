@@ -144,3 +144,26 @@
   pointer-events: none;
   /* пропускать через модалку события */
 }
+
+.gus-anim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+// .gus-anim {
+//   width: 1483px;
+//   height: 935px;
+// }
+
+.form__message {
+text-align: center;
+  margin-top: 10px;
+  color: #ff6b0a;
+}
