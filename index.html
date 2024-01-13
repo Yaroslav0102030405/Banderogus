@@ -769,9 +769,9 @@
         <h2 class="form__title">Поділися, будь ласка, поштою</h2>
         <p class="form__text">та запиши гуся до бандерозагону</p>
         <label class="form__label">Ім'я</label><br />
-        <input class="form__input margion__button" type="name" name="name" required autocomplete="name" /><br />
+        <input class="form__input margion__button" type="name" name="name" required autocomplete="name" minlength="3" maxlength="10" /><br />
         <label class="form__label">Email</label><br />
-        <input class="form__input" type="email" name="email" required autocomplete="email" /><br />
+        <input class="form__input" type="email" name="email" required autocomplete="email" minlength="10" maxlength="15" /><br />
         <div id="success" class="form__message" style="display: none"></div>
         
         <button class="form__btn" type="submit">Запустити гуся</button>
