@@ -19,11 +19,23 @@
     <!-- section header -->
     <header class="header">
       <div class="container">
-        <a href="./index.html">
-          <svg width="100">
-            <use href="./image/icons.svg#icon-logo-black"></use>
-          </svg>
-        </a>
+        <div class="header-wapper">
+          <a class="header-logo" href="./index.html">
+            <svg width="100">
+              <use href="./image/icons.svg#icon-logo-black"></use>
+            </svg>
+          </a>
+
+          <div class="burger-menu">
+            <a class="burger-menu__link" href="#meta">мета проекту</a>
+          </div>
+        
+
+        <div class="burger-animate">
+          <span></span>
+        </div>
+
+        </div>
       </div>
     </header>
     <!-- unique content -->
@@ -44,13 +56,12 @@
                 Запустити гуся
               </button>
             </div>
-            
-              <div class="hero-image">
-                <svg>
-                  <use href="./image/icons.svg#icon-gus-hero"></use>
-                </svg>
-              </div>
-      
+
+            <div class="hero-image">
+              <svg>
+                <use href="./image/icons.svg#icon-gus-hero"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -740,7 +751,7 @@
     </main>
 
     <!-- footer section -->
-    <footer class="footer">
+    <footer id="meta" class="footer">
       <div class="container">
         <div class="footer-wapper">
           <svg class="footer__trezub" width="30" height="52">
@@ -757,34 +768,50 @@
 
     <!-- form and backdrop -->
     <div class="backdrop is-hidden">
-      <form id="form"  class="form">
-         <button class="form__button modal-btn-close" type="button">
+      <form id="form" class="form">
+        <button class="form__button modal-btn-close" type="button">
           <svg class="form__clouse" width="24" height="24">
             <use href="./image/icons.svg#icon-clouse"></use>
-          </svg></button><br />
-        
+          </svg></button
+        ><br />
+
         <svg class="form__trezub" width="30" height="51">
           <use href="./image/icons.svg#icon-trezub"></use>
         </svg>
         <h2 class="form__title">Поділися, будь ласка, поштою</h2>
         <p class="form__text">та запиши гуся до бандерозагону</p>
         <label class="form__label">Ім'я *</label><br />
-        <input class="form__input margion__button" type="name" name="name" required autocomplete="name" minlength="3" maxlength="20" /><br />
+        <input
+          class="form__input margion__button"
+          type="name"
+          name="name"
+          required
+          autocomplete="name"
+          minlength="3"
+          maxlength="20"
+        /><br />
         <label class="form__label">Email *</label><br />
-        <input class="form__input" type="email" name="email" required autocomplete="email" minlength="10" maxlength="45" /><br />
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          required
+          autocomplete="email"
+          minlength="10"
+          maxlength="45"
+        /><br />
         <div id="success" class="form__message" style="display: none"></div>
-        
+
         <button class="form__btn" type="submit">Запустити гуся</button>
-        <img class="gus-anim" src="./image/gus-anim.gif" alt="gus">
-        
+        <img class="gus-anim" src="./image/gus-anim.gif" alt="gus" />
       </form>
     </div>
     <script src="./js/modal.js"></script>
 
+    <script src="./js/burger-animate.js" type="module"></script>
+
     <!-- Відправка форми на телеграм -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/telegram.js"></script>
-
-
   </body>
 </html>

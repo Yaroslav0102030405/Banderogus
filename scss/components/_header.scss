@@ -1,4 +1,33 @@
 .header {
-    position: relative;
-    background: linear-gradient(270deg, #A5DEFF 0%, #FCFEFF 100%);
+  position: relative;
+  background: linear-gradient(270deg, #a5deff 0%, #fcfeff 100%);
+}
+
+.header-wapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  position: relative;
+  z-index: 3;
+}
+
+.burger-menu__link {
+  position: relative;
+  padding: 10px;
+  color: #fcfeff;
+  font-size: 16px;
+  font-weight: 400;
+  z-index: 2;
+}
+
+.burger-menu__link:hover,
+.burger-menu__link:focus {
+  // border: 1px solid #181d1f;
+  // border-radius: 10px;
+
+  cursor: pointer;
+    color: black;
 }
