@@ -51,17 +51,20 @@
 .form__button {
   display: block;
   margin-left: auto;
-  // margin-bottom: 0;
-  // padding-bottom: 0;
   border: none;
   color: inherit;
   font-family: inherit;
   background-color: transparent;
   cursor: pointer;
+  width: 48px;
+  height: 48px;
 }
 
 .form__button:hover {
-  fill: #ff6b0a;
+  // fill: #ff6b0a;
+  fill: #fff;
+  background-color: #f44336;
+  border-radius: 50%;
 }
 
 .form__title {
