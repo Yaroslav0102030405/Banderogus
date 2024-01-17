@@ -16,3 +16,4 @@
 14 commit - add scrollbar and cursor<br>
 15 commit - sending the form to telegram and adding animation<br>
 16 commit - form validation<br>
+17 commit - add animate
