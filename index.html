@@ -14,6 +14,9 @@
     />
 
     <link rel="stylesheet" href="./css/main.min.css" />
+
+    <!-- Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- section header -->
@@ -29,12 +32,10 @@
           <div class="burger-menu">
             <a class="burger-menu__link" href="#meta">мета проекту</a>
           </div>
-        
 
-        <div class="burger-animate">
-          <span></span>
-        </div>
-
+          <div class="burger-animate">
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
@@ -44,7 +45,7 @@
       <section class="hero">
         <div class="container">
           <div class="hero-wapper">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right">
               <p class="hero-content__subtitle">Доброго вечора, ми з України</p>
               <h1 class="hero-content__title">Бандерогусь</h1>
               <p class="hero-content__text">
@@ -57,7 +58,7 @@
               </button>
             </div>
 
-            <div class="hero-image">
+            <div class="hero-image" data-aos="fade-left">
               <svg>
                 <use href="./image/icons.svg#icon-gus-hero"></use>
               </svg>
@@ -71,15 +72,15 @@
           <svg class="advantages__trezub" width="30" height="52">
             <use href="./image/icons.svg#icon-trezub"></use>
           </svg>
-          <h2 class="advantages__title">Цікаві факти про бандерогусей</h2>
-          <p class="advantages__text">
+          <h2 class="advantages__title" data-aos="fade-up">Цікаві факти про бандерогусей</h2>
+          <p class="advantages__text"  data-aos="fade-up">
             Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки
             можуть атакувати ворога системою надпотужного озброєння. Також
             нищать психологічно, активуючи високочастотне шипіння та
             розмахування крилами
           </p>
 
-          <ul class="advantages-images">
+          <ul class="advantages-images" data-aos="fade-up">
             <li>
               <!-- <svg width="374" height="374">
             <use href="./image/icons.svg#icon-gus1"></use>
@@ -757,8 +758,8 @@
           <svg class="footer__trezub" width="30" height="52">
             <use href="./image/icons.svg#icon-trezub"></use>
           </svg>
-          <h2 class="footer__title">Перемога завжди за нами!</h2>
-          <p class="footer__text">
+          <h2 class="footer__title" data-aos="fade-up">Перемога завжди за нами!</h2>
+          <p class="footer__text" data-aos="fade-up">
             Головна мета бандерогусей — служити гумору та доброті нашого народу.
             Ми забезпечимо вашу посмішку у часи, коли вона так необхідна
           </p>
@@ -767,12 +768,13 @@
     </footer>
 
     <!-- form and backdrop -->
-    
+
     <div class="backdrop is-hidden">
-       <button class="form__button modal-btn-close" type="button">
-          <svg class="form__clouse" width="24" height="24">
-            <use href="./image/icons.svg#icon-clouse"></use>
-          </svg></button><br />
+      <button class="form__button modal-btn-close" type="button">
+        <svg class="form__clouse" width="24" height="24">
+          <use href="./image/icons.svg#icon-clouse"></use>
+        </svg></button
+      ><br />
       <form id="form" class="form">
         <svg class="form__trezub" width="30" height="51">
           <use href="./image/icons.svg#icon-trezub"></use>
@@ -812,5 +814,10 @@
     <!-- Відправка форми на телеграм -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/telegram.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

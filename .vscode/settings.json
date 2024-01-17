@@ -2,5 +2,6 @@
   "workbench.settings.useSplitJSON": false,
   "editor.fontVariations": false,
   "editor.fontLigatures": false,
-  "liveServer.settings.AdvanceCustomBrowserCmdLine": ""
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.multiRootWorkspaceName": "Banderogus"
 }
