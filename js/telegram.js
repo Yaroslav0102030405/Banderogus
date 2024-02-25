@@ -9,24 +9,25 @@ document.getElementById('form').addEventListener('submit', function (e) {
   let message = `<b>Заявка с сайта Бандерогусь</b>\n`;
   message += `<b>Отправитель: </b> ${this.name.value}\n`;
   message += `<b>Почта: </b> ${this.email.value}\n`;
-//   message += `<b>Телефон: </b> ${this.phone.value}\n`;
-//   message += `<b>Коментар: </b> ${this.comment.value}`;
+  //   message += `<b>Телефон: </b> ${this.phone.value}\n`;
+  //   message += `<b>Коментар: </b> ${this.comment.value}`;
 
   axios
     .post(URI_API, {
       chat_id: CHAT_ID,
       parse_mode: 'html',
-      text: message
+      text: message,
     })
     .then(res => {
       this.name.value = '';
       this.email.value = '';
-    //   this.phone.value = '';
-    //   this.comment.value = '';
-    //   this.topic.value = '';
-    //   this.checkbox.value = '';
+      //   this.phone.value = '';
+      //   this.comment.value = '';
+      //   this.topic.value = '';
+      //   this.checkbox.value = '';
 
-      success.innerHTML = 'Повідомлення відправлено!';
+      success.innerHTML =
+        '<p class="message">Повідомлення відправлено!</p><p>Через 15 хвилин з вами зв`яжеться менеджер!</p>';
       success.style.display = 'block';
     })
     .catch(error => {
